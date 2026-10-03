@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+	char al[300];
+	int sayac=0;
+	printf("Birseyler yaz-> ");
+	gets(al);
+	int i;
+	for(i=0;i<strlen(al);i++)
+	{
+	if(al[i]=='a' || al[i]=='e' || al[i]=='i' || al[i]=='o' || al[i]=='u')
+		{
+			sayac=sayac+1;
+		}
+	}
+	printf("Yazilan yazidaki sesli harflerin sayisi-> %d",sayac);
+
+
+	return 0;
+}
